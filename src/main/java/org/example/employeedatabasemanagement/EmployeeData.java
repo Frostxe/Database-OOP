@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EmployeeData {
-    private static final String URL = "jdbc:postgresql://localhost:5432/employee_db";
+    private static final String URL = "jdbc:postgresql://localhost:5432/Database-OOP";
     private static final String USER = "postgres"; // Замените на вашего пользователя PostgreSQL
-    private static final String PASSWORD = "lol50768"; // Замените на ваш пароль
+    private static final String PASSWORD = "123"; // Замените на ваш пароль
 
     private Connection getConnection() throws SQLException {
         return DriverManager.getConnection(URL, USER, PASSWORD);

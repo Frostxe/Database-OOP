@@ -8,10 +8,10 @@ public class Main {
 
         employeeData.deleteAllEmployees();
 
-        Employee newEmployee1 = new Employee(0, "John Lee", "Developer", 60000, new Date());
+        Employee newEmployee1 = new Employee(0, "Jon", "Driver", 50000, new Date());
         employeeData.createEmployee(newEmployee1);
 
-        Employee newEmployee2 = new Employee(0, "Cindy Smith", "Designer", 65000, new Date());
+        Employee newEmployee2 = new Employee(0, "Sam", "Driver", 40000, new Date());
         employeeData.createEmployee(newEmployee2);
 
         Employee employee = employeeData.getEmployeeById(1);
@@ -23,7 +23,7 @@ public class Main {
         }
 
         if (employee != null) {
-            employee.setSalary(65000);
+            employee.setSalary(40000);
             employeeData.updateEmployee(employee);
         }
 
